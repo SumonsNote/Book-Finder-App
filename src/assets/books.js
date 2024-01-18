@@ -6,6 +6,7 @@ export const books = [
     publish_date: "2018",
     price: "30",
     rating: 3,
+    isFavorite: false,
     img: "https://i.ibb.co/qrycNcg/Eloquent-Java-Script-260x372-100.webp",
   },
   {
@@ -15,6 +16,7 @@ export const books = [
     publish_date: "2016",
     price: "24",
     rating: 3,
+    isFavorite: true,
     img: "https://i.ibb.co/nztNvz0/Secrets-of-the-Java-Script-Ninja-260x372-100.webp",
   },
   {
@@ -24,6 +26,7 @@ export const books = [
     publish_date: "2012",
     price: "40",
     rating: 4,
+    isFavorite: false,
     img: "https://i.ibb.co/g6T8bNK/Effective-Java-Script-260x372-100.webp",
   },
   {
@@ -33,6 +36,7 @@ export const books = [
     publish_date: "2018",
     price: "25",
     rating: 5,
+    isFavorite: true,
     img: "https://i.ibb.co/k3Wxf8v/Hate-Kolome-Java-Script-260x372-100.webp",
   },
   {
@@ -42,6 +46,7 @@ export const books = [
     publish_date: "2020",
     price: "40",
     rating: 5,
+    isFavorite: false,
     img: "https://i.ibb.co/TTKZRS0/Java-Script-The-Definitive-Guide-260x372-100.webp",
   },
   {
@@ -51,6 +56,7 @@ export const books = [
     publish_date: "2014",
     price: "30",
     rating: 4,
+    isFavorite: true,
     img: "https://i.ibb.co/41x0FTh/Java-Script-and-j-Query-260x372-100.webp",
   },
   {
@@ -60,6 +66,7 @@ export const books = [
     publish_date: "2019",
     price: "35",
     rating: 3,
+    isFavorite: false,
     img: "https://i.ibb.co/9rfbbJP/Java-Script-The-Good-Parts-260x372-100.webp",
   },
   {
@@ -69,6 +76,7 @@ export const books = [
     publish_date: "2017",
     price: "22",
     rating: 5,
+    isFavorite: true,
     img: "https://i.ibb.co/N716RyS/You-Dont-Know-JS-6-Volume-Set-260x372-100.webp",
   },
 ];

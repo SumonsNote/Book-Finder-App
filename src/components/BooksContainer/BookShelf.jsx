@@ -8,11 +8,11 @@ export default function BookShelf() {
   const [bookList, setBookList] = useState([...books]);
 
   function handleSearch(searchTerm) {
-    const filtered = bookList.filter((book) =>
-      book.book_name.toLowerCase().includes(searchTerm.toLowerCase())
+    setBookList(
+      books.filter((book) =>
+        book.book_name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
     );
-
-    setBookList([...filtered]);
   }
 
   function handleSort(sortBook) {
@@ -32,15 +32,12 @@ export default function BookShelf() {
 
   function handleFavorite(bookId) {
     setBookList(
-      bookList.map((book) => {
-        if (book.id === bookId) {
-          return { ...book, isFavorite: !book.isFavorite };
-        } else {
-          return book;
-        }
-      })
+      bookList.map((book) =>
+        book.id === bookId ? { ...book, isFavorite: !book.isFavorite } : book
+      )
     );
   }
+
   return (
     <main className="my-10 lg:my-14">
       <header className="mb-8 lg:mb-10 mx-auto max-w-7xl">
